@@ -16,7 +16,7 @@ body {
     justify-content: center;
 }
 /* este é o container do celular e do login*/
-.deficitgram-wrapper {
+#deficitgram-wrapper {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -24,19 +24,126 @@ body {
     height: 100vh;
 }
 /*esta é a imagem do celular */
-.phone-deficitgram {
+#phone-deficitgram {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
 }
-.phone-deficitgram img {
+#phone-deficitgram img {
     height: 50rem;
 }
 /*este é o container do login, alternar contas (ou inscrever-se) e get-the-app*/
-.login {
+#login {
     display: flex;
     align-items: center; /* em vez de vertical mexe no horizontal*/
     justify-content: space-around;/* em vez de horizontal mexe no vertical*/
     flex-direction: column; /*mudando o flex-direction, o align-items e o justify-content se invertem.*/
+    width: 50%;
+    min-height: 34rem;
+}
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.group:nth-child(1) {
+    min-height: 19rem;
+    margin-bottom: 20px;
+}
+/*imgs*/
+#deficitgram-logo {
+    min-height: 3rem;
+}
+#profile-photo {
+    display: flex;
+    width: 100%;
+    max-width: 120px;
+    height: 100%;
+    max-height: 120px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden; 
+    border: 1.5px solid black;
+    margin: 35px 0;
+}
+#profile-photo img {
+    width: 100%;
+    height: 100%;
+    
+}
+/*botões*/
+.deficitgram-login {
+    background-color: #0095f6;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+}
+.deficitgram-logout {
+    color: #0095f6;
+    margin-top: 1.5rem;
+    margin-bottom: 10px;
+}
+.not-account {
+    color: rgb(160, 160, 160);
+}
+.link-blue a {
+    color: #0095f6;
+}
+/*get-the-app*/
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+.download {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-around;
+}
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+.app-download:nth-child(1) {
+    background-image:url('../img/apple-button.png');
+}
+.app-download:nth-child(2) {
+    background-image:url('../img/googleplay-button.png');
+}
+/* media queries*/
+@media (max-width:1024px) {
+    #deficitgram-wrapper {
+        width: 90%;
+    }
+}
+@media (max-width: 750px) {
+    body {
+        background-color: #fff;
+    }
+    .group {
+        border: 0;
+    }
+    #deficitgram-wrapper {
+        width:90%;
+    }
+    #phone-deficitgram{
+        display: none;
+    }
+    #login {
+        width: 100%;
+    }
 }
