@@ -15,6 +15,7 @@ body {
     padding: 0;
     justify-content: center;
 }
+/* este é o container do celular e do login*/
 .deficitgram-wrapper {
     display: flex;
     align-items: center;
@@ -22,6 +23,7 @@ body {
     width: 60%;
     height: 100vh;
 }
+/*esta é a imagem do celular */
 .phone-deficitgram {
     display: flex;
     justify-content: center;
@@ -31,17 +33,10 @@ body {
 .phone-deficitgram img {
     height: 50rem;
 }
+/*este é o container do login, alternar contas (ou inscrever-se) e get-the-app*/
 .login {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    min-height: 34rem;
+    align-items: center; /* em vez de vertical mexe no horizontal*/
+    justify-content: space-around;/* em vez de horizontal mexe no vertical*/
+    flex-direction: column; /*mudando o flex-direction, o align-items e o justify-content se invertem.*/
 }
-.group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-}
-
